@@ -1,4 +1,4 @@
-import { Container } from '../style'
+import { Container } from './style'
 import logo from '../../assets/colorful-logo.svg';
 import { CgMenu } from 'react-icons/cg';
 

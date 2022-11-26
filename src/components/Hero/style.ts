@@ -9,7 +9,7 @@ export const Container = styled.section`
 
   & .hero-image {
     width: 23rem;
-    margin-top: 12.5rem;
+    margin-top: 14rem;
     align-self: center;
   }
 

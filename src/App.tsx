@@ -1,4 +1,5 @@
 import './App.css';
+import AboutScheduling from './components/AboutScheduling';
 import EmployeeSupport from './components/EmployeeSupport';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <WhatWeDo />
       <EmployeeSupport />
+      <AboutScheduling />
     </>
   );
 }

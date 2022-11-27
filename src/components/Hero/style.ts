@@ -26,4 +26,8 @@ export const Container = styled.section`
     color: #fff;
     margin-top: 3rem;
   }
+
+  & button {
+    margin-top: 2rem;
+  }
 `

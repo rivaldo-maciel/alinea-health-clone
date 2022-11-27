@@ -1,12 +1,13 @@
 import { Container } from './style';
 
 type props = {
-  children: React.ReactNode
+  children: React.ReactNode;
+  width: string;
 }
 
-const SchedulingBtn = ({ children }: props) => {
+const SchedulingBtn = ({ children, width }: props) => {
   return (
-    <Container>
+    <Container width={width}>
       {
         children
       }

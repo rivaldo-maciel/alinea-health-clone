@@ -11,6 +11,7 @@ export const Container = styled.nav<{ isVisible: boolean, devices: Devices }>`
   box-shadow: ${ props => props.isVisible ? '0 0 0 10000px rgba(0,0,0,.50)' : 'none' };
   margin-left: ${ props => props.isVisible ? '0' : '-20rem' };
   transition: all 0.5s ease;
+  z-index: 1;
 
   & .button-close-container {
     height: 3.2rem;

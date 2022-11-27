@@ -3,13 +3,15 @@ import { Devices } from '../../devices';
 
 export const Container = styled.header<{ devices: Devices }>`
   background-color: #fff;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   height: 6.75rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px 0 10px;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
 
   & .logo {
     width: 15rem;
@@ -21,6 +23,10 @@ export const Container = styled.header<{ devices: Devices }>`
 
   & .button-menu-container {
     display: flex;
+  }
+
+  & ul {
+    display: none;
   }
 
   @media ${ props => props.devices.tablet } {
@@ -63,9 +69,13 @@ export const Container = styled.header<{ devices: Devices }>`
   }
 
   @media ${ props => props.devices.desktop_l } {
+    & {
+      padding: 0 30px 0 30px;
+    }
+
     & ul {
-      margin-left: 15rem;
-      margin-right: 15rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
     }
 
     & ul li {

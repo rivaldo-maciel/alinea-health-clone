@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import AboutScheduling from './components/AboutScheduling';
 import EmployeeSupport from './components/EmployeeSupport';
@@ -10,8 +11,12 @@ import Menu from './components/Menu';
 import WhatWeDo from './components/WhatWeDo';
 import MenuContextProvider from './context/MenuContextProvider';
 import GlobalStyles from './GlobalStyles';
+import Aos from 'aos';
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <GlobalStyles />

@@ -15,7 +15,13 @@ const CardCompany = () => {
       </ul>
       <p>Se isso não acontecer, você recebe seu dinheiro de volta.</p>
       <b>Simples assim.</b>
-      <SchedulingBtn width="12rem">Agendar demonstração</SchedulingBtn>
+      <SchedulingBtn
+        width="12rem"
+        background="#4F215A"
+        color="#fff"
+      >
+        Agendar demonstração
+      </SchedulingBtn>
     </Container>
   )
 }

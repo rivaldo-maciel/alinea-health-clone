@@ -22,7 +22,13 @@ const CardEmployee = () => {
           para ajudar em cada etapa de sua jornada.
         </li>
       </ul>
-      <SchedulingBtn width="12rem">Agendar demonstração</SchedulingBtn>
+      <SchedulingBtn
+        width="12rem"
+        background="#4F215A"
+        color="#fff"
+      >
+        Agendar demonstração
+      </SchedulingBtn>
     </Container>
   );
 };

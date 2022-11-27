@@ -5,7 +5,7 @@ import { devices } from '../../../../devices';
 
 const CardEmployee = () => {
   return (
-    <Container devices={ devices }>
+    <Container devices={ devices } data-aos="fade-up">
       <img src={employeesImg} alt="employees icon" />
       <h4>Para os seus colaboradores</h4>
       <ul>

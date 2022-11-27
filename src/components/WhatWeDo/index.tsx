@@ -6,13 +6,13 @@ const WhatWeDo = () => {
   return (
     <Container id="whatWeDo" devices={devices}>
       <h2>O que fazemos?</h2>
-      <div className="image-texts-container">
+      <div className="image-texts-container" data-aos="fade-left">
         <img
           className="what-we-do-img"
           alt="appointment card with a doctor"
           src={src}
         />
-        <div className="texts-container">
+        <div className="texts-container" data-aos="fade-right">
           <h2>Reduzimos custos para a empresa</h2>
           <p className="p-1">
             Direcionamos seus colaboradores aos melhores prestadores dentro da
@@ -33,3 +33,7 @@ const WhatWeDo = () => {
 };
 
 export default WhatWeDo;
+function useEffect(arg0: () => void, arg1: never[]) {
+  throw new Error('Function not implemented.');
+}
+

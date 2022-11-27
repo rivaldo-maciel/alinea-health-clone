@@ -5,7 +5,7 @@ import { Container } from './style';
 const LastPurpleSection = () => {
   return (
     <Container devices={devices}>
-      <h2>
+      <h2 data-aos="fade-up">
         E aí, vamos <span>reduzir os custos</span> e <span>melhorar a qualidade</span> do seu plano
         empresarial?
       </h2>

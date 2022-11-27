@@ -19,7 +19,7 @@ const HowWeDo = () => {
         <CardEmployee />
         <CardCompany />
       </div>
-      <small>
+      <small data-aos="fade-up">
         <FaLock size={15} /> Mantemos a confidencialidade de seus colaboradores
         e não compartilhamos as informações médicas deles com a empresa
         contratante.

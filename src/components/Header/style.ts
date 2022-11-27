@@ -12,6 +12,7 @@ export const Container = styled.header<{ devices: Devices }>`
   padding: 0 10px 0 10px;
   position: fixed;
   z-index: 1;
+  top: 0;
 
   & .logo {
     width: 15rem;

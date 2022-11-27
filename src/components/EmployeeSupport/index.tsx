@@ -5,8 +5,8 @@ import { devices } from '../../devices';
 const EmployeeSupport = () => {
   return (
     <Container devices={devices}>
-      <img className="img-1" src={src} alt="means of employee support" />
-      <div className="texts-container">
+      <img className="img-1" src={src} alt="means of employee support" data-aos="fade-right"/>
+      <div className="texts-container" data-aos="fade-left">
         <h2>
           Suporte para o colaborador em todos os momentos, em um lugar só.
         </h2>

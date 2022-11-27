@@ -64,4 +64,19 @@ export const Container = styled.section<{ devices: Devices }>`
       align-self: flex-start;
     }
   }
+
+  @media ${ props => props.devices.desktop } {
+    & {
+      height: 40rem;
+    }
+
+    & .image-texts-container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media ${ props => props.devices.desktop_l } {
+    align-items: center;
+  }
 `

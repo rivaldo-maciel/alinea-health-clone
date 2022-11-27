@@ -60,4 +60,36 @@ export const Container = styled.section<{ devices: Devices }>`
       width: 40rem;
     }
   }
+
+  @media ${ props => props.devices.desktop } {
+    & {
+      height: 70rem;
+    }
+
+    & .orange-content p {
+      width: 55rem;
+      font-size: 2rem;
+    }
+
+    & .cards-container {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  @media ${ props => props.devices.desktop_l } {
+    & .orange-content p {
+      width: 65rem;
+      font-size: 1.8rem;
+    }
+
+    & .cards-container {
+      width: 65rem;
+      align-self: center;
+    }
+
+    & small {
+      font-size: 1rem;
+    }
+  }
 `

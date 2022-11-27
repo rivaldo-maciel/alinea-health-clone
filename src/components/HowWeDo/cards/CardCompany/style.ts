@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../../../devices';
 
-export const Container = styled.article`
+export const Container = styled.article<{ devices: Devices }>`
   & {
     height: 41rem;
     width: 23rem;
@@ -55,6 +56,12 @@ export const Container = styled.article`
   }
 
   & button {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+  }
+
+  @media ${ props => props.devices.desktop } {
+    & {
+      margin-top: 0;
+    }
   }
 `

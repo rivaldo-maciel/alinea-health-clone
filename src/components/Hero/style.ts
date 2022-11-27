@@ -53,4 +53,36 @@ export const Container = styled.section<{ devices: Devices }>`
       font-size: 3rem;
     }
   }
+
+  @media ${ props => props.devices.desktop } {
+    & {
+      flex-direction: row;
+    }
+
+    & .hero-image {
+      width: 30rem;
+      margin-top: 18rem;
+      align-self: flex-start;
+    }
+
+    & .texts-button-container {
+      margin-top: 12rem;
+    }
+  }
+
+  @media ${ props => props.devices.desktop_l } {
+    & {
+      justify-content: center;
+    }
+
+    & .hero-image {
+      width: 45rem;
+      margin-top: 12rem;
+    }
+
+    & .texts-button-container {
+      width: 40rem;
+      margin-top: 10.5rem;
+    }
+  }
 `

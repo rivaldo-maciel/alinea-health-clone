@@ -1,10 +1,11 @@
 import { Container } from './style';
 import companyImg from '../../../../assets/company.svg';
 import SchedulingBtn from '../../../SchedulingBtn';
+import { devices } from '../../../../devices';
 
 const CardCompany = () => {
   return (
-    <Container>
+    <Container devices={ devices }>
       <img src={companyImg} alt="company icon" />
       <h4>Para a sua empresa</h4>
       <ul>

@@ -33,6 +33,6 @@ export const Container = styled.section<{ devices: Devices }>`
     & h2 {
       width: 40rem;
       margin-top: 5rem;
+    }
   }
-}
 `

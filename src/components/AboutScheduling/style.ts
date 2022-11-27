@@ -36,4 +36,39 @@ export const Container = styled.section<{ devices: Devices }>`
       margin-top: 3rem;
     }
   }
+
+  @media ${ props => props.devices.desktop } {
+    & {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & h2 {
+      margin-top: 0;
+      font-size: 3rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+
+    & .march-calendar-img {
+      margin-top: 0;
+      width: 30rem;
+    }
+  }
+
+  @media ${ props => props.devices.desktop_l } {
+    & {
+      justify-content: center;
+    }
+
+    & .texts-container {
+      width: 45rem;
+    }
+
+    & .march-calendar-img {
+      width: 35rem;
+    }
+  }
 `

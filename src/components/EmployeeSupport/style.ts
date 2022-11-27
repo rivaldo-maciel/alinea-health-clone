@@ -36,4 +36,35 @@ export const Container = styled.section<{ devices: Devices }>`
       width: 30rem;
     }
   }
+
+  @media ${ props => props.devices.tablet } {
+    &  {
+      flex-direction: row;
+      height: 35rem;
+    }
+
+    & .img-1 {
+      align-self: center;
+      margin-top: 0;
+      width: 35rem;
+    }
+
+    & .texts-container {
+      align-self: center;
+    }
+
+    & h2 {
+      margin-top: 0;
+    }
+  }
+
+  @media ${ props => props.devices.desktop_l } {
+    & {
+      justify-content: center;
+    }
+
+    & .texts-container {
+      width: 38rem;
+    }
+  }
 `

@@ -36,4 +36,40 @@ export const Container = styled.header<{ devices: Devices }>`
       padding: 0 25px 0 25px;
     }
   }
+
+  @media ${ props => props.devices.desktop } {
+    & {
+      justify-content: space-evenly;
+      padding: 0 5px 0 5px;
+    }
+
+    & .menu-icon {
+      display: none;
+    }
+
+    & ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+    }
+
+    & ul li {
+      color: #4F215A;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 10rem;
+      cursor: pointer;
+    }
+  }
+
+  @media ${ props => props.devices.desktop_l } {
+    & ul {
+      margin-left: 15rem;
+      margin-right: 15rem;
+    }
+
+    & ul li {
+      width: 15rem;
+    }
+  } 
 `

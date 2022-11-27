@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Devices } from '../../../../devices';
 
-export const Container = styled.article`
+export const Container = styled.article<{ devices: Devices }>`
    & {
-    height: 40rem;
+    height: 41rem;
     width: 23rem;
     border-radius: 20px;
     border: 1px solid rgba(29, 36, 58, 0.12);

@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import { menuContext } from '../../context/menuContext';
 import { devices } from '../../devices';
 import SchedulingBtn from '../SchedulingBtn';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   const { setIsVisible } = useContext(menuContext);
@@ -15,6 +16,18 @@ const Header = () => {
         alt="alinea health logo"
         className="logo"
       />
+      <ul>
+        <li>
+          <Link to="whatWeDo" smooth={true} onClick={() => setIsVisible(false)}>
+            O que fazemos?
+          </Link>
+        </li>
+        <li>
+          <Link to="howWeDo" smooth={true} onClick={() => setIsVisible(false)}>
+            Como fazemos?
+          </Link>
+        </li>
+      </ul>
       <div className="button-menu-container">
         <SchedulingBtn
           width="16rem"
@@ -23,7 +36,7 @@ const Header = () => {
         >
           Agendar uma demonstração
         </SchedulingBtn>
-        <CgMenu size="30" onClick={() => setIsVisible(true)}/>
+        <CgMenu className="menu-icon" size="30" onClick={() => setIsVisible(true)}/>
       </div>
     </Container>
   )

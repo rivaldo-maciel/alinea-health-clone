@@ -6,11 +6,15 @@ const EmployeeSupport = () => {
   return (
     <Container devices={devices}>
       <img className="img-1" src={src} alt="means of employee support" />
-      <h2>Suporte para o colaborador em todos os momentos, em um lugar só.</h2>
-      <p>
-        Através do nosso app, uma equipe de especialistas fica disponível para
-        tirar dúvidas, realizar triagem e auxiliar sempre que necessário.
-      </p>
+      <div className="texts-container">
+        <h2>
+          Suporte para o colaborador em todos os momentos, em um lugar só.
+        </h2>
+        <p>
+          Através do nosso app, uma equipe de especialistas fica disponível para
+          tirar dúvidas, realizar triagem e auxiliar sempre que necessário.
+        </p>
+      </div>
     </Container>
   );
 };

@@ -3,7 +3,7 @@ import src from '../../assets/figure-1.svg';
 
 const WhatWeDo = () => {
   return (
-    <Container>
+    <Container id="whatWeDo">
       <h2>O que fazemos?</h2>
       <img
         className="what-we-do-img"

@@ -5,7 +5,7 @@ import { FaLock } from 'react-icons/fa';
 
 const HowWeDo = () => {
   return (
-    <Container>
+    <Container id="howWeDo">
       <div className="orange-content">
         <h2>Como fazemos isso?</h2>
         <p>

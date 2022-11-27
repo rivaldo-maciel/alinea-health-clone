@@ -1,6 +1,7 @@
 import './App.css';
 import AboutScheduling from './components/AboutScheduling';
 import EmployeeSupport from './components/EmployeeSupport';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import HowWeDo from './components/HowWeDo';
@@ -19,6 +20,7 @@ function App() {
       <AboutScheduling />
       <HowWeDo />
       <LastPurpleSection />
+      <Footer />
     </>
   );
 }

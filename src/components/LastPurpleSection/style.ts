@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../devices';
 
-export const Container = styled.section`
+export const Container = styled.section<{ devices: Devices }>`
   height: 28rem;
   background-color: #4F215A;
   display: flex;
@@ -23,4 +24,15 @@ export const Container = styled.section`
     align-self: center;
     margin-top: 2rem;
   }
+
+  @media ${ props => props.devices.tablet } {
+    & {
+      margin-top: 2rem;
+    }
+
+    & h2 {
+      width: 40rem;
+      margin-top: 5rem;
+  }
+}
 `

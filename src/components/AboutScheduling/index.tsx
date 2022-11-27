@@ -1,9 +1,10 @@
 import { Container } from './style';
 import src from '../../assets/figure-3.svg';
+import { devices } from '../../devices';
 
 const AboutScheduling = () => {
   return (
-    <Container>
+    <Container devices={devices}>
       <h2>Agendamento simples e direto.</h2>
       <p>
         Realizar o agendamento de consultas e procedimentos é trabalhoso e

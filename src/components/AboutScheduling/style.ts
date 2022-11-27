@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../devices';
 
-export const Container = styled.section`
+export const Container = styled.section<{ devices: Devices }>`
   height: 46rem;
   display: flex;
   flex-direction: column;
@@ -22,5 +23,17 @@ export const Container = styled.section`
   & .march-calendar-img {
     width: 23rem;
     margin-top: 1rem;
+  }
+
+  @media ${ props => props.devices.tablet } {
+    & {
+      padding: 0 30px 0 30px;
+    }
+
+    & .march-calendar-img {
+      width: 30rem;
+      align-self: center;
+      margin-top: 3rem;
+    }
   }
 `

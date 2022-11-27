@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../devices';
 
-export const Container = styled.nav<{ isVisible: boolean }>`
+export const Container = styled.nav<{ isVisible: boolean, devices: Devices }>`
   height: 100vh;
   width: 20rem;
   background-color: #fff;
@@ -41,5 +42,12 @@ export const Container = styled.nav<{ isVisible: boolean }>`
     margin-left: 1rem;
     width: 100%;
     font-size: 1.2rem;
+  }
+
+  @media ${ props => props.devices.tablet } {
+    & {
+      width: 40rem;
+      margin-left: ${ props => props.isVisible ? '0' : '-40rem' };
+    }
   }
 `

@@ -1,9 +1,10 @@
 import { Container } from './style';
 import logo from '../../assets/colorful-logo.svg';
+import { devices } from '../../devices';
 
 const Footer = () => {
   return (
-    <Container>
+    <Container devices={devices}>
       <img className="logo-footer" src={logo} alt="alinea health logo" />
       <ul>
         <li><a href="">Imprensa</a></li>

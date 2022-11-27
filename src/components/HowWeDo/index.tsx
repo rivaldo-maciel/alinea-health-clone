@@ -2,10 +2,11 @@ import { Container } from './style';
 import CardCompany from './cards/CardCompany';
 import CardEmployee from './cards/CardEmployee';
 import { FaLock } from 'react-icons/fa';
+import { devices } from '../../devices';
 
 const HowWeDo = () => {
   return (
-    <Container id="howWeDo">
+    <Container id="howWeDo" devices={devices}>
       <div className="orange-content">
         <h2>Como fazemos isso?</h2>
         <p>

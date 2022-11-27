@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../devices';
 
-export const Container = styled.section`
+export const Container = styled.section<{ devices: Devices }>`
   height: 62.5rem;
   background-color: #F28159;
   display: flex;
@@ -29,5 +30,27 @@ export const Container = styled.section`
 
   & button {
     margin-top: 2rem;
+  }
+
+  @media ${ props => props.devices.tablet } {
+    & {
+      padding: 0 20px 0 20px;
+    }
+
+    & .hero-image {
+      width: 43.5rem;
+      margin-top: 10rem;
+    }
+
+    & h4 {
+      width: auto;
+      font-size: 1.6rem;
+      margin-top: 2rem;
+    }
+
+    & h2 {
+      width: auto;
+      font-size: 3rem;
+    }
   }
 `

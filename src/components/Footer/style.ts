@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../devices';
 
-export const Container = styled.footer`
+export const Container = styled.footer<{ devices: Devices }>`
   height: 22rem;
   display: flex;
   flex-direction: column;

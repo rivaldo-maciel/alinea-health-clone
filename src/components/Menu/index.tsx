@@ -3,12 +3,13 @@ import { GrFormClose } from 'react-icons/gr';
 import { useContext } from 'react';
 import { menuContext } from '../../context/menuContext';
 import { Link } from 'react-scroll';
+import { devices } from '../../devices';
 
 const Menu = () => {
   const { isVisible, setIsVisible } = useContext(menuContext);
 
   return (
-    <Container isVisible={isVisible}>
+    <Container isVisible={isVisible} devices={devices}>
       <div className="button-close-container">
         <div
           className="button-close-content"

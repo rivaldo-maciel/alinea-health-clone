@@ -1,9 +1,10 @@
 import { Container } from './style';
 import src from '../../assets/figure-1.svg';
+import { devices } from '../../devices';
 
 const WhatWeDo = () => {
   return (
-    <Container id="whatWeDo">
+    <Container id="whatWeDo" devices={devices}>
       <h2>O que fazemos?</h2>
       <img
         className="what-we-do-img"

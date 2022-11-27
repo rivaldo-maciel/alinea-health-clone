@@ -1,9 +1,10 @@
 import { Container } from './style';
 import src from '../../assets/figure-2.svg';
+import { devices } from '../../devices';
 
 const EmployeeSupport = () => {
   return (
-    <Container>
+    <Container devices={devices}>
       <img className="img-1" src={src} alt="means of employee support" />
       <h2>Suporte para o colaborador em todos os momentos, em um lugar só.</h2>
       <p>

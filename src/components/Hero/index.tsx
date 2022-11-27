@@ -1,10 +1,11 @@
 import { Container } from './style';
 import heroImage from '../../assets/hero-image.png';
 import SchedulingBtn from '../SchedulingBtn';
+import { devices } from '../../devices';
 
 const Hero = () => {
   return (
-    <Container>
+    <Container devices={devices}>
       <img
         className="hero-image"
         src={heroImage}

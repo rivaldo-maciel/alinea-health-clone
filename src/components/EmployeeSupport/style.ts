@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Devices } from '../../devices';
 
-export const Container = styled.section`
+export const Container = styled.section<{ devices: Devices }>`
   height: 48rem;
   background-color: #4F215A;
   display: flex;
@@ -24,5 +25,15 @@ export const Container = styled.section`
     font-size: 1.25rem;
     margin-top: 2rem;
     opacity: 0.7;
+  }
+
+  @media ${ props => props.devices.tablet } {
+    & {
+      padding: 0 25px 0 25px;
+    }
+
+    & .img-1 {
+      width: 30rem;
+    }
   }
 `

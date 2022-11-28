@@ -10,7 +10,7 @@ export const Container = styled.section<{ devices: Devices }>`
 
   & .hero-image {
     width: 23rem;
-    margin-top: 14rem;
+    margin-top: 1.4rem;
     align-self: center;
   }
 

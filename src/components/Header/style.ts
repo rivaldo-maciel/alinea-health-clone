@@ -10,7 +10,7 @@ export const Container = styled.header<{ devices: Devices }>`
   justify-content: space-between;
   align-items: center;
   padding: 0 10px 0 10px;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   top: 0;
 

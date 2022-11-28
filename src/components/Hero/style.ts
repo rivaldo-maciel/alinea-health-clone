@@ -81,12 +81,12 @@ export const Container = styled.section<{ devices: Devices }>`
 
     & .hero-image {
       width: 45rem;
-      margin-top: 12rem;
+      margin-top: 6rem;
     }
 
     & .texts-button-container {
       width: 40rem;
-      margin-top: 10.5rem;
+      margin-top: 3.5rem;
     }
   }
 `

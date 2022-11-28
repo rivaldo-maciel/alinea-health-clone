@@ -16,7 +16,7 @@ export const Container = styled.section<{ devices: Devices }>`
 
   & .what-we-do-img {
     align-self: center;
-    width: 22rem;
+    width: 18rem;
     margin-top: 5.5rem;
   }
 

@@ -43,6 +43,7 @@ export const Container = styled.section<{ devices: Devices }>`
     text-align: center;
     margin-top: 2rem;
     opacity: 0.9;
+    color: #4D4D4D;
   }
 
   @media ${ props => props.devices.tablet } {
@@ -58,6 +59,11 @@ export const Container = styled.section<{ devices: Devices }>`
     & small {
       font-size: 1.8rem;
       width: 40rem;
+    }
+
+    & button:hover {
+      background-color: #F18159;
+      transition: all 0.6s ease;
     }
   }
 

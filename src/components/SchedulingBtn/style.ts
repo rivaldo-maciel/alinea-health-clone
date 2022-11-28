@@ -11,4 +11,5 @@ export const Container = styled.button<{width: string, background: string, color
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
 `

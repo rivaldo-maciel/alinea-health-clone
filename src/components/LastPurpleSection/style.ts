@@ -34,5 +34,11 @@ export const Container = styled.section<{ devices: Devices }>`
       width: 40rem;
       margin-top: 5rem;
     }
+
+    & button:hover {
+      background-color: #F18159;
+      color: #fff;
+      transition: all 0.6s ease;
+    }
   }
 `

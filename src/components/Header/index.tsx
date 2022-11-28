@@ -30,7 +30,7 @@ const Header = () => {
       </ul>
       <div className="button-menu-container">
         <SchedulingBtn
-          width="16rem"
+          width="15rem"
           background="#fff"
           color="#000"
         >

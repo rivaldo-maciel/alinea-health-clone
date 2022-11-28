@@ -33,6 +33,10 @@ export const Container = styled.section<{ devices: Devices }>`
   }
 
   @media ${ props => props.devices.tablet } {
+    & button:hover {
+      background-color: #612870;
+    }
+
     & {
       padding: 0 20px 0 20px;
     }

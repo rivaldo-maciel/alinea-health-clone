@@ -77,6 +77,24 @@ export const Container = styled.section<{ devices: Devices }>`
   }
 
   @media ${ props => props.devices.desktop_l } {
-    align-items: center;
+    & {
+      align-items: center;
+    }
+
+    & .texts-container {
+      width: 45rem;
+    }
+
+    & .texts-container h2 {
+      font-size: 2rem;
+    }
+
+    & .texts-container .p-1 {
+      width: 35rem;
+    }
+
+    & .image-texts-container .what-we-do-img {
+      margin-top: 2rem;
+    }
   }
 `

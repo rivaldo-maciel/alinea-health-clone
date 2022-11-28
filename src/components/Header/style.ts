@@ -37,6 +37,13 @@ export const Container = styled.header<{ devices: Devices }>`
       border-radius: 15px;
       height: 2.5rem;
       margin-right: 1.5rem;
+      color: #322935;
+    }
+
+    & button:hover {
+      background-color: #4F215A;
+      color: #fff;
+      transition: all 0.6s ease;
     }
 
     & {

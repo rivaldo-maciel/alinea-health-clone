@@ -1,6 +1,5 @@
-import Aos from 'aos';
 import { useEffect } from 'react';
-import './App.css';
+import Aos from 'aos';
 import AboutScheduling from './components/AboutScheduling';
 import EmployeeSupport from './components/EmployeeSupport';
 import Footer from './components/Footer';
@@ -12,6 +11,7 @@ import Menu from './components/Menu';
 import WhatWeDo from './components/WhatWeDo';
 import MenuContextProvider from './context/MenuContextProvider';
 import GlobalStyles from './GlobalStyles';
+import './App.css';
 
 function App() {
   useEffect(() => {

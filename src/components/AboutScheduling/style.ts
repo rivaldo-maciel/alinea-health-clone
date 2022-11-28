@@ -14,8 +14,7 @@ export const Container = styled.section<{ devices: Devices }>`
   }
 
   & p {
-    color: #000;
-    opacity: 0.7;
+    color: #4D4D4D;
     font-size: 1.2rem;
     margin-top: 2rem;
   }
